@@ -102,14 +102,14 @@ for p=1:length(year)
     ciw=CIW.ciw(:,:,:,p);
   end
 % .nc SECTION
-  start=[1 1 1 p]; interval=[length([-10:xgrid:10]) length([-10:ygrid:10]) length(lev) 1];
-  clw=ncread(['StormCenteredData/' dset_c '_CLW.nc'],'clw',start,interval];
-  if (dset == "ERA5")
-    ciw=ncread(['StormCenteredData/' dset_c '_CIW.nc'],'ciw',start,interval];
-  w=ncread(['StormCenteredData/' dset_c '_W.nc'],'w',start,interval];
-  u=ncread(['StormCenteredData/' dset_c '_U.nc'],'u',start,interval];
-  v=ncread(['StormCenteredData/' dset_c '_V.nc'],'v',start,interval];
-  temp=ncread(['StormCenteredData/' dset_c '_T.nc'],'temp',start,interval];
+%  start=[1 1 1 p]; interval=[length([-10:xgrid:10]) length([-10:ygrid:10]) length(lev) 1];
+%  clw=ncread(['StormCenteredData/' dset_c '_CLW.nc'],'clw',start,interval);
+%  if (dset == "ERA5")
+%    ciw=ncread(['StormCenteredData/' dset_c '_CIW.nc'],'ciw',start,interval);
+%  w=ncread(['StormCenteredData/' dset_c '_W.nc'],'w',start,interval);
+%  u=ncread(['StormCenteredData/' dset_c '_U.nc'],'u',start,interval);
+%  v=ncread(['StormCenteredData/' dset_c '_V.nc'],'v',start,interval);
+%  temp=ncread(['StormCenteredData/' dset_c '_T.nc'],'temp',start,interval);
   % Need u and v winds to calculate divergence and radial wind!
 
   latbox=[-10:ygrid:10]+lat(p); lonbox=[-10:xgrid:10]+lon(p);
