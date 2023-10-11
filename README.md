@@ -41,7 +41,7 @@ A generalized script is included in this folder to calculate wind shear using th
 |`shear_u`|Zonal component of vertical wind shear (m/s).|
 |`shear_v`|Meridional component of vertical wind shear (m/s).|
 |`shear_magnitude`|Magnitude of vertical wind shear (m/s).|
-|`shear_direction`|Azimuth of vertical wind shear (m/s).|
+|`shear_direction`|Direction that wind shear vector points toward (Degrees clockwise from due north).|
 
 # Data-Processing Scripts
 A brief description of each MATLAB script is below, taking in data from the StormCenteredData, TCTracks, and WindShear folders to produce wind shear-relative composite analyses of TC structure and processes. Each script is commented to describe the purpose, workflow, and resulting plots, with file paths aligned with the overall layout of this repository. Within the scripts, users have the ability to set their own binning schemes to assess composite TC structure, including ranges for TC wind speed, minimum pressure, and wind shear magnitude.
